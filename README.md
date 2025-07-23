@@ -1,3 +1,9 @@
+---
+title: career_assistant
+app_file: app.py
+sdk: gradio
+sdk_version: 5.38.0
+---
 ## 💬 Career Assistant Chatbot Project
 This project is an intelligent career assistant chatbot that leverages structured data from my CV (in PDF format), a text-based professional summary, and public repositories from my GitHub profile to assist users in career-related discussions.
 
@@ -38,7 +44,7 @@ UV is a modern, high-performance Python package manager and installer written in
 * create virtual environment: `uv venv .venv`
 * activate virtual environment (linux): `source .venv/Scripts/activate`
 * On jupyter notebook, the virtual environment is name: `Python (myenv)`. Choose it to use the UV virtual environment on your notebook.
-* install faiss for embedding and sentence transformer: `uv pip install sentence-transformers faiss-cp`
+* Install required packages: `uv pip install -r requirements.txt`
 
 ### Setup Environment Variable
 * Create `.env` in project root directory 
