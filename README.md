@@ -2,6 +2,13 @@
 This project is an intelligent career assistant chatbot that leverages structured data from my CV (in PDF format), a text-based professional summary, and public repositories from my GitHub profile to assist users in career-related discussions.
 
 The chatbot is powered by function-calling tools and can dynamically interact with users using real-time data and responses. It supports three main tools:
+
+### 🧠 Language Model (LLM)
+The chatbot is built on `gemini-2.0-flash`, a lightweight and high-speed version of Google's Gemini large language model family. This version is optimized for fast inference and low latency, making it ideal for real-time chatbot interactions. It provides:
+* Fast response generation
+* Strong understanding of structured prompts
+* Efficient tool-calling and reasoning
+* Lower resource usage compared to heavier models
  
 ### 🔧 Implemented Tool
  
@@ -15,9 +22,7 @@ When a user engages in meaningful discussion, the assistant encourages them to p
 If a user asks about the projects I've worked on, this tool accesses my public GitHub repositories and returns a structured list containing:
     * Project Name
     * URL
-    * Description
-
-Each project is then described in bullet point format for clarity.
+    * Description<br>Each project is then described in bullet point format for clarity.
 
 ### 🔔 Smart Notifications
 For real-time updates, both the `record_user_details` and `record_unknown_question` tools are integrated with Google Chrome push notifications, ensuring I receive alerts whenever:
