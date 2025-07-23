@@ -198,7 +198,6 @@ class Me:
     def __init__(self):
         self.google_api_key = os.getenv('GEMINI_API_KEY')
         self.google_gai_url="https://generativelanguage.googleapis.com/v1beta/openai/"
-        self.openai = OpenAI()
         self.name = "Gabriel Olatunji"
         self.profiles = {'linkedin': '', 'resume': ''}
 
