@@ -1,0 +1,5 @@
+.venv/
+
+.env
+
+./data-source/resume.pdf
