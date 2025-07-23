@@ -4,3 +4,10 @@ UV is a modern, high-performance Python package manager and installer written in
 * confirm the version: `uv --version`
 * create virtual environment: `uv venv .venv`
 * activate virtual environment (linux): `source .venv/Scripts/activate`
+* On jupyter notebook, the virtual environment is name: `Python (myenv)`. Choose it to use the UV virtual environment on your notebook.
+
+### Setup Environment Variable
+* Create `.env` in project root directory 
+* Set up your API keys in the git ignore file
+
+### 
