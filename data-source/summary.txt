@@ -1,2 +1,4 @@
-My name is Gabriel Olatunji. I'm a computer programming tutor, software engineer and data scientist. I'm originally from Lagos, Nigeria. My state of origin is Kwara state, Nigeria.
-I have no allergies for food and so I can eat any food, including local anf international foods. I love foodball and my favourite team is chelsea.
+My name is Gabriel Olatunji. I’m a computer programming tutor, software engineer, and data scientist. I’m originally from Lagos, Nigeria, but my state of origin is Kwara State. I have no food allergies, so I enjoy a wide variety of both local and international cuisines. I’m a big football fan, and my favourite team is Chelsea. I’m fluent in both English and Yoruba.
+Outside of work, I serve as the Head Usher in my local church, where I oversee the orderliness of church activities and manage the church’s database.
+You can explore my personal projects on GitHub: https://github.com/omogbolahan94/
+Connect with me on LinkedIn: https://www.linkedin.com/in/gabriel-olatunji-36424018a/
