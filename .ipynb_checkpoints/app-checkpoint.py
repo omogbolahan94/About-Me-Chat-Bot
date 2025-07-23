@@ -216,7 +216,7 @@ class Me:
             self.summary = f.read()
 
 
-    def handle_tool_call(self, tool_calls):
+    def handle_tool_calls(self, tool_calls):
         results = []
         for tool_call in tool_calls:
             tool_name = tool_call.function.name
@@ -236,7 +236,7 @@ class Me:
         Be professional and engaging, as if talking to a potential client or future employer who came across the website. \
         If you don't know the answer to any question, use your record_unknown_question tool to record the question that you couldn't answer, even if it's about         something trivial or unrelated to career. \
         If the user is engaging in discussion, try to steer them towards getting in touch via email; ask for their email and record it using your record_user_details tool.\
-        If the user requested to know about the projects you have worked on, use your list_github_repos tool to access github and list repos with their names, url and description and describe all relevant project in a bullet point format."
+        If the user requested to know about any projects you have worked on, use your list_github_repos tool to access your github repository and list repos with their names, url and description and then describe all relevant project in a well structured format even if it has to be in a bullet point format."
         
         system_prompt += f"\n\n## Summary:\n{self.summary}\n\n## LinkedIn Profile:\n{self.linkedin}\n\n"
         system_prompt += f"With this context, please chat with the user, always staying in character as {self.name}."
@@ -256,7 +256,7 @@ class Me:
             if finish_reason=="tool_calls":
                 message = response.choices[0].message
                 tool_calls = message.tool_calls
-                results = handle_tool_calls(tool_calls)
+                results = self.handle_tool_calls(tool_calls)
                 messages.append(message)
                 messages.extend(results)
             else:
