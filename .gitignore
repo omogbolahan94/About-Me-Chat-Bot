@@ -9,4 +9,5 @@
 .env
 
 >>>>>>> 959af104128da603934ae77f2ce8eef68321816e
-./data-source/resume.pdf
+./data-source/resume.pdfdata-source/*.pdf
+data-source/
