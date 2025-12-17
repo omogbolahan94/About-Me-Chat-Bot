@@ -49,3 +49,15 @@ UV is a modern, high-performance Python package manager and installer written in
 ### Setup Environment Variable
 * Create `.env` in project root directory 
 * Set up your API keys in the git ignore file
+
+### Huggingface Deployment
+Since I loaded the project to hugging face the first time, do the following to update the uploaded project:
+* git remote add hf https://huggingface.co/{user}/{project_name}
+* Login huggingface on terminal: huggingface-cli login
+* git push hf main
+* If the above step has merge error: 
+    * git pull hf main --allow-unrelated-histories
+    * git add .
+    * git commit -m "Merge Hugging Face repo with local repo"
+    * git push hf main
+ 
