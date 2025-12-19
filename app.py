@@ -196,14 +196,9 @@ tools = [{"type": "function", "function": record_user_details_json},
 class Me:
 
     def __init__(self):
-<<<<<<< HEAD
         # self.google_api_key = os.getenv('GEMINI_API_KEY')
         # self.google_gai_url="https://generativelanguage.googleapis.com/v1beta/openai/"
         self.openai_api_key = os.getenv('OPENAI_API_KEY')
-=======
-        self.google_api_key = os.getenv('GEMINI_API_KEY')
-        self.google_gai_url="https://generativelanguage.googleapis.com/v1beta/openai/"
->>>>>>> 959af104128da603934ae77f2ce8eef68321816e
         self.name = "Gabriel Olatunji"
         self.profiles = {'linkedin': '', 'resume': ''}
 
@@ -254,7 +249,6 @@ class Me:
         
         done = False
         while not done:
-<<<<<<< HEAD
             # gemini = OpenAI(api_key=self.google_api_key, base_url=self.google_gai_url)
             # model_name = "gemini-2.0-flash"
             # response = gemini.chat.completions.create(model=model_name, messages=messages, tools=tools)
@@ -269,12 +263,6 @@ class Me:
                 tools=tools
             )
             finish_reason = response.choices[0].finish_reason
-=======
-            gemini = OpenAI(api_key=self.google_api_key, base_url=self.google_gai_url)
-            model_name = "gemini-2.0-flash"
-            response = gemini.chat.completions.create(model=model_name, messages=messages, tools=tools)
-            finish_reason = response.choices[0].finish_reason 
->>>>>>> 959af104128da603934ae77f2ce8eef68321816e
             
             if finish_reason=="tool_calls":
                 message = response.choices[0].message
