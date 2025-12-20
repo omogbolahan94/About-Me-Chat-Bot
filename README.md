@@ -55,18 +55,9 @@ UV is a modern, high-performance Python package manager and installer written in
 Create a Dataset Repo
 * huggingface-cli repo create about_me_bot_docs --type dataset
 * Upload the data manualy or programmatically my going into the data repo created above
-* 
 
-
-
-Since I loaded the project to hugging face the first time, do the following to update the uploaded project:
-* git remote add hf https://huggingface.co/{user}/{project_name}
-* Login huggingface on terminal: huggingface-cli login
+Login Huggingface on Terminal and Push all code to Space Repo
+* Login huggingface on terminal: `huggingface-cli login`
+* git remote add hf https://huggingface.co/spaces/O-G-O/career_assistant
 * git push hf main
-* If the above step has merge error: 
-    * git pull hf main --allow-unrelated-histories
-    * git add .
-    * git commit -m "Merge Hugging Face repo with local repo"
-    * git push hf main
-=======
->>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
+

@@ -3,10 +3,14 @@
 
 .env
 
+about_me_bot_docs/
+
 data-source/
 data-source/*.pdf
 data-source/*.txt
 
 testing.py
+
+data-source/resume.pdf
 
 
