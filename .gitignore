@@ -1,16 +1,10 @@
-<<<<<<< HEAD
+
 .venv/
 
 .env
 
-=======
-.venv/
-
-.env
-
->>>>>>> 959af104128da603934ae77f2ce8eef68321816e
-./data-source/resume.pdfdata-source/*.pdf
 data-source/
 data-source/*.pdf
 data-source/*.txt
-data-source/*.pdf
+
+testing.py
