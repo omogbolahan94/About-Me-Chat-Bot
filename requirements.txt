@@ -1,20 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
 requests
 python-dotenv
 gradio
 pypdf
 openai
-<<<<<<< HEAD
-=======
-requests
-python-dotenv
-gradio
-pypdf
-openai
->>>>>>> 959af104128da603934ae77f2ce8eef68321816e
-=======
->>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
 openai-agents

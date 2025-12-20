@@ -570,13 +570,10 @@ if __name__ == "__main__":
         
         done = False
         while not done:
-<<<<<<< HEAD
-=======
             # gemini = OpenAI(api_key=self.google_api_key, base_url=self.google_gai_url)
             # model_name = "gemini-2.0-flash"
             # response = gemini.chat.completions.create(model=model_name, messages=messages, tools=tools)
             # finish_reason = response.choices[0].finish_reason 
->>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
             openai_client = OpenAI(api_key=self.openai_api_key)
 
             model_name = "gpt-3.5-turbo"
@@ -603,8 +600,3 @@ if __name__ == "__main__":
     me = Me()
     gr.ChatInterface(me.chat, type="messages").launch()
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba

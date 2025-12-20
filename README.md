@@ -58,5 +58,8 @@ Create a Dataset Repo
 Login Huggingface on Terminal and Push all code to Space Repo
 * Login huggingface on terminal: `huggingface-cli login`
 * git remote add hf https://huggingface.co/spaces/O-G-O/AboutMe
+* if the code base has been pushed to github initially: git pull hf main --allow-unrelated-histories
+* git add .
+* git commit -m "Merged remote and local histories"
 * git push hf main
 
