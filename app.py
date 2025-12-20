@@ -5,9 +5,12 @@ import os
 import requests
 import re 
 from pypdf import PdfReader
+<<<<<<< HEAD
 
 from huggingface_hub import hf_hub_download, list_repo_files
 
+=======
+>>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
 import gradio as gr
 
 
@@ -197,6 +200,7 @@ tools = [{"type": "function", "function": record_user_details_json},
 
 
 class Me:
+<<<<<<< HEAD
     
     def __init__(self):
         self.openai_api_key = os.getenv('OPENAI_API_KEY')
@@ -237,6 +241,29 @@ class Me:
         if summary_filename in hf_paths:
             with open(hf_paths[summary_filename], "r", encoding="utf-8") as f:
                 self.summary = f.read()
+=======
+
+    def __init__(self):
+        # self.google_api_key = os.getenv('GEMINI_API_KEY')
+        # self.google_gai_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+        self.openai_api_key = os.getenv('OPENAI_API_KEY')
+        self.name = "Gabriel Olatunji"
+        self.profiles = {'linkedin': '', 'resume': ''}
+
+        for profile in self.profiles:
+            reader = PdfReader(f"data-source/{profile}.pdf")
+            result_str = ""
+            for page in reader.pages:
+                text = page.extract_text()
+                if text:
+                    result_str += text
+            self.profiles[profile] += result_str
+        self.linkedin = self.profiles['linkedin']
+        self.resume = self.profiles['resume']
+        
+        with open("data-source/summary.txt", "r", encoding="utf-8") as f:
+            self.summary = f.read()
+>>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
 
 
     def handle_tool_calls(self, tool_calls):
@@ -271,6 +298,13 @@ class Me:
         
         done = False
         while not done:
+<<<<<<< HEAD
+=======
+            # gemini = OpenAI(api_key=self.google_api_key, base_url=self.google_gai_url)
+            # model_name = "gemini-2.0-flash"
+            # response = gemini.chat.completions.create(model=model_name, messages=messages, tools=tools)
+            # finish_reason = response.choices[0].finish_reason 
+>>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
             openai_client = OpenAI(api_key=self.openai_api_key)
 
             model_name = "gpt-3.5-turbo"
@@ -297,5 +331,8 @@ if __name__ == "__main__":
     me = Me()
     gr.ChatInterface(me.chat, type="messages").launch()
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
