@@ -3,12 +3,10 @@
 
 .env
 
-<<<<<<< HEAD
 data-source/
 data-source/*.pdf
 data-source/*.txt
 
 testing.py
-=======
-./data-source/resume.pdf
->>>>>>> 429a64b90d1ab4d844b4ee7653000d7733c180ba
+
+
