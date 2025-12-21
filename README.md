@@ -48,7 +48,8 @@ UV is a modern, high-performance Python package manager and installer written in
 
 ### Setup Environment Variable
 * Create `.env` in project root directory 
-* Set up your API keys in the git ignore file
+* Set up your API keys in the `.env` file
+* Add the text `.env` to gitignore file
 
 ### Huggingface Deployment
 Create a Dataset Repo
